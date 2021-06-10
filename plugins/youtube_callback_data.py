@@ -91,7 +91,7 @@ async def catch_youtube_dldata(c, q):
         "youtube-dl",
         "-c",
         "--embed-subs",
-        "-f", f"{format_id}+bestaudio",
+        "-f", f"{format_id}[ext=mp4]+bestaudio[ext=m4a]",
         "-o", filepath,
         "--hls-prefer-ffmpeg", yturl]
 
