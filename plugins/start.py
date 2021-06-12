@@ -3,7 +3,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
 
-@Client.on_message(filters.command(["start"])& filters.private)
+@Client.on_message(filters.command(["start"]))
 async def start(client, message):
     # return
     joinButton = InlineKeyboardMarkup([
